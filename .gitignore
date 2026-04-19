@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Allure
+allure-results/
+allure-report/
+
+# Logs
+*.log
+logs/
+
+# Perfetto Tools (二进制文件从官网下载)
+tools/perfetto/*.exe
+tools/perfetto/trace_processor
+
+# OS
+.DS_Store
+Thumbs.db

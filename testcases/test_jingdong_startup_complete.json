@@ -1,0 +1,8 @@
+{
+  "config": {
+    "package": "com.jingdong.app.mall",
+    "timeout": 30,
+    "retry_count": 3,
+    "activity": ".MainFrameActivity"
+  }
+}

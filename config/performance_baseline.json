@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "description": "性能指标基线标准（聚焦启动完成时间测试）",
+  "last_updated": "2026-04-19",
+  
+  "startup_time": {
+    "cold_start_complete_thresholds": [1000, 1500],
+    "hot_start_complete_thresholds": [500, 800],
+    "unit": "ms",
+    "note": "阈值定义：[警告阈值1, 警告阈值2]，超过即标记为 WARNING"
+  }
+}

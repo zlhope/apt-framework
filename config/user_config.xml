@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <device>
+        <id>0808880004448540</id>
+    </device>
+    <testsuite>
+        testcases/test_Jingdong1.py,
+        testcases/test_Jingdong2.py
+    </testsuite>
+    <test>
+        <timeout>30</timeout>
+        <retry_count>3</retry_count>
+    </test>
+    <log>
+        <level>INFO</level>
+        <path>logs/</path>
+    </log>
+</configuration>
