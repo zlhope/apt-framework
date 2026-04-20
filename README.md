@@ -108,9 +108,9 @@ aw/                 # 原子工作流层：可复用的性能分析模块
         └─ baseline_manager.py     # 基线管理
         
 utils/              # 工具类层：基础能力封装
-    ├─ device_utils.py    # 设备管理
-    ├─ config_utils.py    # 配置加载
-    └─ logger_utils.py    # 日志工具
+    ├─ Utils.py           # 设备管理与通用工具
+    ├─ adb.py             # ADB 命令封装
+    └─ uiautomator2_api.py # UI 自动化 API
 ```
 
 ### 核心流程
