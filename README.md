@@ -34,21 +34,35 @@ pip install -r requirements.txt
 
 ### 2. 安装 Perfetto Trace Processor
 
-从 [Perfetto 官网](https://get.perfetto.dev/trace_processor) 下载对应平台的二进制文件：
+从 [Perfetto 官网](https://perfetto.dev/docs/analysis/trace-processor) 下载对应平台的二进制文件：
 
 **Windows:**
 ```powershell
 # 创建目录
 New-Item -Path "tools\perfetto" -ItemType Directory -Force
 
-# 下载 trace_processor
-Invoke-WebRequest -Uri "https://get.perfetto.dev/trace_processor" -OutFile "tools\perfetto\trace_processor.exe"
+# 下载 trace_processor (Windows amd64)
+Invoke-WebRequest -Uri "https://get.perfetto.dev/trace_processor_shell-windows-amd64" -OutFile "tools\perfetto\trace_processor.exe"
 ```
 
-**Linux/Mac:**
+**Linux:**
 ```bash
 mkdir -p tools/perfetto
-wget https://get.perfetto.dev/trace_processor -O tools/perfetto/trace_processor
+wget https://get.perfetto.dev/trace_processor_shell-linux-amd64 -O tools/perfetto/trace_processor
+chmod +x tools/perfetto/trace_processor
+```
+
+**Mac (Intel):**
+```bash
+mkdir -p tools/perfetto
+wget https://get.perfetto.dev/trace_processor_shell-darwin-amd64 -O tools/perfetto/trace_processor
+chmod +x tools/perfetto/trace_processor
+```
+
+**Mac (Apple Silicon):**
+```bash
+mkdir -p tools/perfetto
+wget https://get.perfetto.dev/trace_processor_shell-darwin-arm64 -O tools/perfetto/trace_processor
 chmod +x tools/perfetto/trace_processor
 ```
 
